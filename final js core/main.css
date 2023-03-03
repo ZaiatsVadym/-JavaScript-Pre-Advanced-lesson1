@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer {
+    height: 75px;
+    font-size: 75px;
+}
+
+.buttonBox {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    background-color: brown;
+    font-size: 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+.box {
+    width: 900px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block1 {
+    width: 360px;
+    height: 420px;
+    background-color: lightgrey;
+    box-shadow: 0px 0px 10px 0 black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-size: 0;
+}
+.block2 {
+    width: 360px;
+    height: 420px;
+    background-color: lightgrey;
+    box-shadow: 0px 0px 10px 0 black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-size: 0;
+    position: relative;
+}
+.bL{
+    width: 90px;
+    height: 105px;
+    background-size: 90px 105px;
+    background-color: aqua;
+    
+}
+.bl1 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/00.png);
+    background-position: 0 0;
+    background-size: 90px 105px;
+}
+
+.bl2 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/10.png);
+    background-position: -90px 0;
+    background-size: 90px 105px;
+
+}
+
+.bl3 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/20.png);
+    background-position: -180px 0;
+    background-size: 90px 105px;
+
+}
+
+.bl4 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/30.png);
+    background-position: -270px 0;
+    background-size: 90px 105px;
+
+}
+
+.bl5 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/01.png);
+    background-position: 0 -105px;
+    background-size: 90px 105px;
+
+}
+
+.bl6 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/11.png);
+    background-position: -90px -105px;
+    background-size: 90px 105px;
+
+}
+
+.bl7 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/21.png);
+    background-position: -180px -105px;
+    background-size: 90px 105px;
+
+}
+
+.bl8 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/31.png);
+    background-position: -270px -105px;
+    background-size: 90px 105px;
+
+}
+
+.bl9 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/02.png);
+    background-position: 0 -210px;
+    background-size: 90px 105px;
+
+}
+
+.bl10 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/12.png);
+    background-position: -90px -210px;
+    background-size: 90px 105px;
+
+}
+
+.bl11 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/22.png);
+    background-position: -180px -210px;
+    background-size: 90px 105px;
+
+}
+
+.bl12 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/32.png);
+    background-position: -270px -210px;
+    background-size: 90px 105px;
+
+}
+
+.bl13 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/03.png);
+    background-position: 0 -315px;
+    background-size: 90px 105px;
+
+}
+
+.bl14 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/13.png);
+    background-position: -90px -315px;
+    background-size: 90px 105px;
+
+}
+
+.bl15 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/23.png);
+    background-position: -180px -315px;
+    background-size: 90px 105px;
+
+}
+
+.bl16 {
+    width: 90px;
+    height: 105px;
+    background-image: url(arsenal/33.png);
+    background-position: -270px -315;
+    background-size: 90px 105px;
+
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: -1;
+}
+.button2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal1 {
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    background-color: rgb(236, 232, 232);
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 35px;
+    line-height: 55px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.modal2 {
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    background-color: rgb(236, 232, 232);
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 35px;
+    line-height: 55px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.modal3 {
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    background-color: rgb(236, 232, 232);
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 35px;
+    line-height: 55px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.timer2{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black ;
+    margin: 20px;
+    border-radius: 10px;
+}
+.close {
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: darkred;
+    margin: 10px;
+}
+.close2 {
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: darkred;
+    margin: 20px 260px;
+
+}
+.close3 {
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: darkred;
+    margin: 20px 260px;
+}
+#check2 {
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: darkgreen;
+    margin: 10px;
+}
